@@ -1,5 +1,6 @@
 public class Ejecutar {
-    public static void main (string[] args){
-    System.out.println(x:"Programacion Orientada a Objetos");
+    public static void main(String[] args){
+        System.out.println("Programacion Orientada a Objetos");
     }
+}
 
