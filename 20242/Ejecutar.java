@@ -64,7 +64,6 @@ public class Ejecutar {
          * Salida: areaCirculo
          */
         double r = 0.0; //variable
-        final double PI = 3.1416; //constante
         double areaCirculo = 0.0;
 
         r = 3;
@@ -92,6 +91,27 @@ public class Ejecutar {
 
         System.out.println(F + "grados farenheit a grados centigrados" + gradoscentigrados);
         System.out.println(C + "grados centigrados a grados farenheint " + gradosfarenheit);
+
+        /*actividad independiente 
+         * metodos en java 
+         * los ejercicios anteriores implementarlos con metodos.
+         * tener en cuenta el concepto de la firma del metodo 
+         * preparar quiz 
+         */
+
+        /*
+         * Ejercicio #4 metodos 
+         * Entrada: SalarioBruto -> SB, Deducciones -> D, Comisión -> C 
+         * Proceso: (SalarioBruto - Deducciones) + Comisión
+         * Salida: SalarioNeto -> SN
+         */
+
+         //Inicializar variables 
+         
+         int SB = 0;
+         int D = 0;
+         int C = 0;
+
 
 
 
