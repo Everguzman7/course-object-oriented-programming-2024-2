@@ -1,0 +1,52 @@
+// SalarioEmpleado.java
+
+import java.util.Scanner;
+
+public class SalarioEmpleado {
+
+    // Método principal que inicia la aplicación
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        // Obtención de datos del usuario
+        double salarioBruto = obtenerSalarioBruto(scanner);
+        double deducciones = obtenerDeducciones(scanner);
+        double comision = obtenerComision(scanner);
+        
+        // Cálculo del salario neto
+        double salarioNeto = calcularSalarioNeto(salarioBruto, deducciones, comision);
+        
+        // Mostrar el resultado
+        mostrarSalarioNeto(salarioNeto);
+        
+        scanner.close();
+    }
+
+    // Método para obtener el salario bruto del usuario
+    private static double obtenerSalarioBruto(Scanner scanner) {
+        System.out.print("Ingrese el salario bruto: ");
+        return scanner.nextDouble();
+    }
+
+    // Método para obtener las deducciones del usuario
+    private static double obtenerDeducciones(Scanner scanner) {
+        System.out.print("Ingrese las deducciones: ");
+        return scanner.nextDouble();
+    }
+
+    // Método para obtener la comisión del usuario
+    private static double obtenerComision(Scanner scanner) {
+        System.out.print("Ingrese la comisión: ");
+        return scanner.nextDouble();
+    }
+
+    // Método para calcular el salario neto
+    private static double calcularSalarioNeto(double salarioBruto, double deducciones, double comision) {
+        return (salarioBruto - deducciones) + comision;
+    }
+
+    // Método para mostrar el salario neto
+    private static void mostrarSalarioNeto(double salarioNeto) {
+        System.out.println("El salario neto del empleado es: " + salarioNeto);
+    }
+}
