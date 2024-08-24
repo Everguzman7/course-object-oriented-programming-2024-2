@@ -7,7 +7,6 @@ public class SalarioEmpleado {
     // Método principal que inicia la aplicación
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        
         // Obtención de datos del usuario
         double salarioBruto = obtenerSalarioBruto(scanner);
         double deducciones = obtenerDeducciones(scanner);
