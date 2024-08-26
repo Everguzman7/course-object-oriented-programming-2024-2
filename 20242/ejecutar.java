@@ -39,11 +39,25 @@ public class ejecutar {
       a = b;
       b = aux;
       System.out.println("a:" + a + " b:" + b);
+
+
       /*
        * Reglas de Prioridad - PEMDAS
        * Paréntesis - Exponente - Multiplicación - División - Adición(Suma) - Sustracción(Resta) 
        */
       /*
+
+      /*Progrmaciom Orientada a objetos (POO)
+       * Abstraccion -> Abstraccion de la realidad
+       * Encapsolución -> Atributos - visibilidad 
+       * Herencia ->  "Es Un" , clases padres, clases hijas 
+       * Polimorfismo -> capacidad que tiene un metodo de computarse segun quien lo llame
+      */
+
+      /*la clase 
+       * Nombre
+       * Atributos
+       *
        * 1. Diseñe un algoritmo que calcule el área de un cuadrado, teniendo uno de sus  lados.
        * A = lado^2 
        * 2. Diseñe un algoritmo que calcule el área de un círculo. A = π r^2 
