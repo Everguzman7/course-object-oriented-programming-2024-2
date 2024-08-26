@@ -37,7 +37,7 @@ public class Marcador {
      */
 
      public String recargar(double cantidad){
-        return "El marcador se recargo con:" + cantidad + "ml";
+        return "El marcador se recargo con: " + cantidad + "ml";
      }
 
      public String toString(){
