@@ -28,7 +28,25 @@ public class Libro {
         }
     }
 
-    public void devolver()
+    public void devolver(Libro objLibro){
+        if(objLibro.disponible = true){
+            objLibro.disponible = false;
+            System.out.println(" Devolucion exitosa ");
+
+        }else{
+            System.out.println( "No se ha devuelto el libro");
+        }
+    }
+
+    public void estaDisponible(Libro objLibro){
+        if(objLibro.disponible = false){
+            objLibro.disponible = true;
+            System.out.println( " El ibro esta disponible ");
+
+        }else{
+            System.out.println( " El libro ya no esta disponible");
+        }
+    }
 
 
 

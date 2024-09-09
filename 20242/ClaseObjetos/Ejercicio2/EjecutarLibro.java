@@ -10,5 +10,11 @@ public class EjecutarLibro {
         objLibro1.prestar(objLibro1);
         objLibro1.prestar(objLibro1);
 
+        objLibro3.devolver(objLibro3);
+        objLibro3.devolver(objLibro3);
+
+        objLibro2.estaDisponible(objLibro2);
+        objLibro2.estaDisponible(objLibro2);
+
     }
 }
