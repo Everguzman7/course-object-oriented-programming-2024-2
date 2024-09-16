@@ -4,7 +4,7 @@ public class Operario extends Trabajador{
     private double horas;
 
     public Operario(int id, String nombre, String area, double horas){
-        super(ide, nombre, area);
+        super(id, nombre, area);
         this.horas = horas;
     }
 
