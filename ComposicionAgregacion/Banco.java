@@ -1,14 +1,12 @@
-import java.nio.channels.ClosedByInterruptException;
-
-class Banco {
+public class Banco {
     //Atributos
     private String NIT;
     private String razonSocial;
-    private Cuenta cuenta
+    private Cuenta cuenta;
     
     //Constructor
-    public Banco(String nIT, String razonSocial, Cuenta cuenta) {
-        NIT = nIT;
+    public Banco(String NIT, String razonSocial, Cuenta cuenta) {
+        this.NIT = NIT;
         this.razonSocial = razonSocial;
         this.cuenta = cuenta;
     }
@@ -17,8 +15,8 @@ class Banco {
         return NIT;
     }
 
-    public void setNIT(String nIT) {
-        NIT = nIT;
+    public void setNIT(String NIT) {
+        this.NIT = NIT;
     }
 
     public String getRazonSocial() {
@@ -48,7 +46,7 @@ class Banco {
     public boolean esCliente(Cliente cliente){
         boolean flag = false;
         if (cliente instanceof Cliente){
-            flag = true
+            flag = true;
         }
 
         return flag;
