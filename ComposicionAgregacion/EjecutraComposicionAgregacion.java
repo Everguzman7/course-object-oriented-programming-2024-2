@@ -8,6 +8,18 @@ public class EjecutraComposicionAgregacion {
 
         Banco objBanco1 = new Banco("90247911", "Banco UCC", objCuenta1);
 
+        System.out.println(objBanco1);
+
+        System.out.println(objBanco1.esCliente(objCliente1));
+
+        //System.out.println(objCuenta1.consignarMsg(objCuenta1.getNroCuenta(), 150000.0));
+
+        System.out.println("Transaccion:" + objCuenta1.consignar(objCuenta1.getNroCuenta(), 150000.0));
+
+        System.out.println(objCuenta1);
+
+
+
     }
     
 }
