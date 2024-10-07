@@ -61,5 +61,39 @@ public class Cuenta {
         
         }
         return flag;
+    }
+
+    public boolean retirar(String nroCuenta, double monto){
+        boolean flag = false;
+        if (nrocuenta.equals("702346")){
+            saldo -= monto;
+            flag = true;
+        
+        }
+        return flag;
+   }
+
+    public String retirarMsg(String nroCuenta, double monto){
+    String msg = "";
+    if (nroCuenta.equals("702346")){
+        saldo -= monto;
+        msg = "Retiro exitoso...saldo actual = "+ saldo;
+    }else{
+        msg = "error no puedes retirar";
+    }
+
+    return msg;
+   }
+
+   public double consultarSaldo(String nroCuenta){
+    if (nrocuenta.equals("702346")){
+        return saldo;
+    }else {
+        return -1; //numero de cuenta no es valido
+    }
+   }
+
+   public double transaccion(String nroCuenta, double monto){
+    
    }
 }
