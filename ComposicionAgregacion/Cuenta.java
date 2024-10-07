@@ -93,7 +93,5 @@ public class Cuenta {
     }
    }
 
-   public double transaccion(String nroCuenta, double monto){
-    
-   }
+   
 }
