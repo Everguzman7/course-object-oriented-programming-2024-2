@@ -1,3 +1,4 @@
+package ClaseObjetos.Ejercicio3;
 //ejercicio1
 
 import java.util.Scanner;

@@ -1,4 +1,5 @@
-package ClaseObjetos;
+package ClaseObjetos.Ejercicios;
+
 public class EjecutarMarcador {
 
     public static void main(String[] args) {

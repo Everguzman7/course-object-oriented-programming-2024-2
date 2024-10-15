@@ -1,3 +1,4 @@
+package ClaseObjetos.Ejercicios;
 public class AreaCirculo {
     public static void main(String[] args) {
         double radio = 5.0; // Puedes cambiar este valor según el radio deseado

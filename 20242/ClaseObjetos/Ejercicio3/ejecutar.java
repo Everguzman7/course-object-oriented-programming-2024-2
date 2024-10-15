@@ -1,3 +1,4 @@
+package ClaseObjetos.Ejercicio3;
 public class ejecutar {
   public static void main(String[] args) {
       

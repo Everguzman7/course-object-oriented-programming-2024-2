@@ -1,4 +1,4 @@
-package ClaseObjetos;
+package ClaseObjetos.Ejercicios;
 public class Marcador {
 
     //Atributos de la clase 
