@@ -8,8 +8,8 @@ public class EjecutarParcialPOO {
 
         //Crear productos
         Foto foto1 = new Foto("1144p");
-        Impresion impresion1 = new Impresion("Foto impresa", 5000.0, foto1);
-        Camara camara1 = new Camara("Camara nikon", 5000.0, 24);
+        Producto impresion1 = new Impresion("Foto impresa", 5000.0, foto1);
+        Producto camara1 = new Camara("Camara nikon", 5000.0, 24);
 
         //agregamos productos al pedido
         pedido1.agregarProducto(impresion1);
