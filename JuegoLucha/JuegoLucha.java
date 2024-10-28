@@ -1,4 +1,4 @@
-import java.util.Scanner;
+
 
 public class JuegoLucha {
     private Personaje jugador1;
@@ -8,8 +8,8 @@ public class JuegoLucha {
 
 //Metodo para iniciaizar los personajes
 public JuegoLucha(String nombre1, String nombre2){
-    this.jugador1 = new Personaje(nombre1);
-    this.jugador2 = new Personaje(nombre2);
+    this.jugador1 = new Rugal(nombre1);
+    this.jugador2 = new Iori(nombre2);
 }
 
 //Merodo para iniciar pelea
@@ -40,21 +40,7 @@ public void iniciarPelea(){
 
     }
 
-    //Metodo principal que ejecuta el juego
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-
-        System.out.println("introduce el nombre del jugador 1");
-
-        String nombre1 = scanner.nextLine();
-
-        System.out.println("introduce el nombre del jugador 2");
-
-        String nombre2 = scanner.nextLine();
-
-        JuegoLucha juego = new JuegoLucha(nombre1, nombre2);
-        juego.iniciarPelea();
-    }
+    
 
 
 }    

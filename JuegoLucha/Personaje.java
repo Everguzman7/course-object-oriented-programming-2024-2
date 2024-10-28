@@ -1,6 +1,7 @@
 import java.util.Random;
 
-public class Personaje {     
+public class Personaje {   
+
     private String nombre;
     private int puntosDeVida;
     private final int MAX_DANO = 30;
@@ -32,10 +33,12 @@ public void recibirDano ( int dano ) {
 public boolean estaVivo () {
  return this.puntosDeVida > 0;
  }
+ 
  // Devuelve el nombre del personaje
   public String getNombre () {
   return this.nombre;
  }
+
  // Devuelve los puntos de vida actuales
   public int getPuntosDeVida () {
   return this.puntosDeVida;
