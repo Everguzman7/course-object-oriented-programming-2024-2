@@ -1,10 +1,10 @@
 public class EjecutarParcialPOO {
     public static void main(String[] args) {
     
-        Clientee cliente = new Clientee( "Ever", "1134576522");
+        Clientee objcliente = new Clientee( "Ever", "1134576522");
 
         //Crear el pedido
-        Pedido pedido1 = new Pedido();
+        Pedido objpedido1 = new Pedido();
 
         //Crear productos
         Foto foto1 = new Foto("1144p");
@@ -12,13 +12,13 @@ public class EjecutarParcialPOO {
         Camara objcamara1 = new Camara("Camara nikon", 5000.0, 24);
 
         //agregamos productos al pedido
-        pedido1.agregarProducto(objimpresion1);
-        pedido1.agregarProducto(objcamara1);
+        objpedido1.agregarProducto(objimpresion1);
+        objpedido1.agregarProducto(objcamara1);
 
         //agregar pedido al cliente
-        cliente.agregarPedido(pedido1);
+        objcliente.agregarPedido(objpedido1);
 
         //mostar detalles 
-        cliente.mostrarPedidos();
+        objcliente.mostrarPedidos();
     }
 }
