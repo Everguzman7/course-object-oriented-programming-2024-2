@@ -1,25 +1,40 @@
 package Ascensor;
+//clase abstracta que da el comportamiento
+public abstract class Boton {
+    
+    private boolean presionado;
+    private boolean alumbrando; // Indica si el botón está alumbrando
+    private String tipo; //tipo de boton(subiba, bajada)
 
-public class Boton {
-    protected boolean presionado;
-    protected String tipo;
-
+    //constructor  donde se inicializa cada boton en especifico 
     public Boton(String tipo) {
         this.tipo = tipo;
         this.presionado = false;
+        this.alumbrando = false;
     }
-
+//metodo para presionar el boton, tambien cambia el estado a presionado y activa el alumbrado.
     public void presionar() {
         presionado = true;
-        System.out.println("Botón de " + tipo + " presionado.");
+        alumbrando = true; // Al presionar, el botón comienza a alumbrar
+        System.out.println("Botón de " + tipo + " presionado y alumbrando.");
+        realizarAccion();
     }
-
+//metodo para liberar el boton, tambien cambia el estado a no presionado y desactiva el presionado.
     public void liberar() {
         presionado = false;
-        System.out.println("Botón de " + tipo + " liberado.");
+        alumbrando = false; // Deja de alumbrar al liberar
+        System.out.println("Botón de " + tipo + " liberado y apagado.");
     }
 
     public boolean isPresionado() {
         return presionado;
     }
+
+    public boolean isAlumbrando() {
+        return alumbrando;
+    }
+
+    // Método abstracto para acciones específicas de las subclases
+    public abstract void realizarAccion();
+    
 }

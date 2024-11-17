@@ -1,7 +1,8 @@
 package Ascensor;
-
+//clase piso donde se representa el piso del edificio con botones de subida y bajada 
 public class Piso {
-    private int numero;
+   
+    private int numero;// numero del piso 
     private BotonSubida botonSubida;
     private BotonBajada botonBajada;
 
@@ -14,7 +15,7 @@ public class Piso {
             this.botonBajada = new BotonBajada();
         }
     }
-
+//se le da direccion al ascensor (subida o bajada)
     public void solicitarAscensor(String direccion) {
         if (direccion.equals("subida") && botonSubida != null) {
             botonSubida.presionar();

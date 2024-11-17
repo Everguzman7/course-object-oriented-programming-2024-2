@@ -1,6 +1,6 @@
 package Ascensor;
 import java.util.*;
-
+//gestiona el funcionamiento del ascensor y los pisos 
 public class SistemaControl {
     private Ascensor ascensor;
 	private List<Piso> pisos;

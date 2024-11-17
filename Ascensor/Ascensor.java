@@ -1,8 +1,9 @@
 package Ascensor;
-
+//representa el funcionamiento del ascensor 
 public class Ascensor {
-    private int pisoActual; // piso actual
-	private String direccion; // "sube - baja - detenido"
+    
+	private int pisoActual; // piso actual
+	private String direccion; //direccion del movimiento "sube - baja - detenido"
 	private boolean enMovimiento;
 	private Puerta puerta;
 

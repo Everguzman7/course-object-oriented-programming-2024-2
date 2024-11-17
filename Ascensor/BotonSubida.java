@@ -1,13 +1,13 @@
 package Ascensor;
-
+// clase que hereda de boton 
 public class BotonSubida extends Boton {
+    
     public BotonSubida() {
         super("subida");
     }
 
     @Override
-    public void presionar() {
-        super.presionar();
-        System.out.println("Solicitando ascensor para subir.");
+    public void realizarAccion() {
+        System.out.println("El botón de subida está activado. Indicando subida.");
     }
 }

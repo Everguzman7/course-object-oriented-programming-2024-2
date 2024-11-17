@@ -1,7 +1,8 @@
 package Ascensor;
-
+//representa la puerta del ascensor 
 public class Puerta {
-    private boolean abierta;  
+    
+	private boolean abierta;  
 	private boolean sensorObstaculo;
 
 	public Puerta() {
