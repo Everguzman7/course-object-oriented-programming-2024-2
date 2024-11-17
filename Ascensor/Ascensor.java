@@ -1,5 +1,6 @@
 package Ascensor;
 //representa el funcionamiento del ascensor 
+//aqui se da la relacion de composicion ya que el ascensor tiene a (puerta)
 public class Ascensor {
     
 	private int pisoActual; // piso actual
@@ -11,7 +12,7 @@ public class Ascensor {
 		this.pisoActual = 0; // donde inicia el ascensor
 		this.direccion = "detenido";
 		this.enMovimiento = false;
-		this.puerta = new Puerta();
+		this.puerta = new Puerta();// se crea la clase puerta dentro del constructor ascensor 
 	}
 
 	public void moverA(int pisoDestino) {
@@ -50,27 +51,9 @@ public class Ascensor {
 	public String getDireccion() {
 		return direccion;
 	}
+
+
 }
 
-class Puerta {
 
-	private boolean abierta;
 
-	public Puerta() {
-		this.abierta = true; // inicializa abierta para permitir entrada
-	}
-
-	public void abrir() {
-		abierta = true;
-		System.out.println("Puerta abierta.");
-	}
-
-	public void cerrar() {
-		abierta = false;
-		System.out.println("Puerta cerrada.");
-	}
-
-	public boolean isAbierta() {
-		return abierta;
-	}
-}
