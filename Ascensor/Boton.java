@@ -2,11 +2,11 @@ package Ascensor;
 //clase abstracta que da el comportamiento
 public abstract class Boton {
     
-    private boolean presionado;
+    private boolean presionado;//indica si el boton esta presionado
     private boolean alumbrando; // Indica si el botón está alumbrando
     private String tipo; //tipo de boton(subiba, bajada)
 
-    //constructor  donde se inicializa cada boton en especifico 
+    //constructor  donde se inicializa 
     public Boton(String tipo) {
         this.tipo = tipo;
         this.presionado = false;
@@ -26,10 +26,12 @@ public abstract class Boton {
         System.out.println("Botón de " + tipo + " liberado y apagado.");
     }
 
+    //get retorna presionado y se pone (is)por que es booleano 
     public boolean isPresionado() {
         return presionado;
     }
 
+    //get retorna alumbrando y se pone (is)por que es booleano 
     public boolean isAlumbrando() {
         return alumbrando;
     }

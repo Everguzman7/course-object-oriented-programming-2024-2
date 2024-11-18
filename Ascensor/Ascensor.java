@@ -4,7 +4,7 @@ package Ascensor;
 //aqui se da la relacion de composicion ya que el ascensor tiene a (puerta)
 public class Ascensor {
 
-	private int pisoActual; // El piso donde se encuentra el ascensor actualmente
+    private int pisoActual; // donde se encuentra el ascensor
     private String direccion; // La dirección del movimiento: "subiendo", "bajando", o "detenido"
     private boolean enMovimiento; // Indica si el ascensor está en movimiento
     private Puerta puerta; // Composición: el ascensor tiene una puerta asociada
@@ -12,9 +12,9 @@ public class Ascensor {
     // Constructor: inicializa los atributos del ascensor
     public Ascensor() {
         this.pisoActual = 0; // El ascensor empieza en el piso 0
-        this.direccion = "detenido"; // Comienza sin moverse
+        this.direccion = "detenido";
         this.enMovimiento = false; // Inicialmente no está en movimiento
-        this.puerta = new Puerta(); // Crea una nueva instancia de la clase Puerta
+        this.puerta = new Puerta(); // se crea una nueva instancia de la clase Puerta
     }
 
     // Método para mover el ascensor a un piso específico
@@ -26,14 +26,14 @@ public class Ascensor {
             System.out.println("Ascensor " + direccion + " al piso " + pisoDestino);
             pisoActual = pisoDestino; // Actualiza el piso actual
             enMovimiento = false; // Detiene el ascensor
-            direccion = "detenido"; // Actualiza la dirección a detenido
+            direccion = "detenido";
             puerta.abrir(); // Abre la puerta al llegar al destino
         } else {
             System.out.println("El ascensor ya está en el piso " + pisoDestino);
         }
     }
 
-    // Cambia la dirección del ascensor (si no está en movimiento)
+    // se Cambia la dirección del ascensor (si no está en movimiento)
     public void cambiarDireccion(String nuevaDireccion) {
         if (!enMovimiento) {
             direccion = nuevaDireccion;
@@ -58,7 +58,8 @@ public class Ascensor {
         return direccion;
     }
 
-    // Get devuelve si el ascensor está en movimiento
+    // Get devuelve si el ascensor está en movimiento, se pone un (is)por que
+    // booleano
     public boolean isEnMovimiento() {
         return enMovimiento;
     }

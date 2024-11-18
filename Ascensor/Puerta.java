@@ -1,14 +1,16 @@
 package Ascensor;
+
 //representa la puerta del ascensor 
 public class Puerta {
-    private boolean abierta;
-    private boolean sensorObstaculo;
+    private boolean abierta;// estado de la puerta true = abierta
+    private boolean sensorObstaculo;// indica si hay algun obstaculo
 
     public Puerta() {
         this.abierta = false;
         this.sensorObstaculo = false;
     }
 
+    // metodo para abrir la puerta
     public void abrir() {
         if (!sensorObstaculo) {
             abierta = true;
@@ -18,6 +20,7 @@ public class Puerta {
         }
     }
 
+    // metodo para cerrar la puerta
     public void cerrar() {
         if (!sensorObstaculo) {
             abierta = false;
@@ -27,6 +30,7 @@ public class Puerta {
         }
     }
 
+    // metodo que activa o desactiva el sensor de obstaculos
     public void detectarObstaculo(boolean estado) {
         sensorObstaculo = estado;
     }
@@ -34,5 +38,5 @@ public class Puerta {
     public boolean getAbierta() {
         return abierta;
     }
-	
+
 }

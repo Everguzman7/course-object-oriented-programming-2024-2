@@ -15,23 +15,23 @@ public class EjecutarAscensor {
       System.out.println("\nSolicitando ascensor desde el piso 4 para bajar");
       objsistemaControl.recibirSolicitud(4, "bajada");
 
-      Ascensor ascensor = new Ascensor();
-      Puerta puerta = ascensor.getPuerta();
+      Ascensor objascensor = new Ascensor();
+      Puerta objpuerta = objascensor.getPuerta();
 
       System.out.println("Intentando abrir la puerta sin obstáculo:");
-      puerta.abrir(); // Puerta se abre normalmente
+      objpuerta.abrir(); // Puerta se abre normalmente
 
       System.out.println("\nDetectando un obstáculo...");
-      puerta.detectarObstaculo(true);
+      objpuerta.detectarObstaculo(true);
 
       System.out.println("Intentando cerrar la puerta con obstáculo:");
-      puerta.cerrar(); // No debería cerrar por el obstáculo
+      objpuerta.cerrar(); // No debería cerrar por el obstáculo
 
       System.out.println("\nRemoviendo el obstáculo...");
-      puerta.detectarObstaculo(false);
+      objpuerta.detectarObstaculo(false);
 
       System.out.println("Intentando cerrar la puerta nuevamente:");
-      puerta.cerrar(); // Ahora debería cerrarse correctamente
+      objpuerta.cerrar(); // Ahora debería cerrarse correctamente
 
       // Simulación de fallas en el sistema
       System.out.println("\nSimulación de falla en el sistema:");

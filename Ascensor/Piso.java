@@ -11,15 +11,18 @@ public class Piso {
         this.botonBajada = new BotonBajada();
     }
 
-    //se solicita el ascensor a la dirreccion dada 
+    // Método para solicitar el ascensor
     public void solicitarAscensor(String direccion) {
         if (direccion.equals("subida")) {
-            botonSubida.presionar();
+            botonSubida.presionar(); // Presiona el botón de subida
         } else if (direccion.equals("bajada")) {
-            botonBajada.presionar();
+            botonBajada.presionar(); // Presiona el botón de bajada
+        } else {
+            System.out.println("Dirección inválida");
         }
     }
 
+    // Get devuelve el número del piso
     public int getNumero() {
         return numero;
     }
